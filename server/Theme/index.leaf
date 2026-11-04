@@ -1,0 +1,8 @@
+<leaf:page title="Home" nav="Home" order="0" />
+
+<section class="intro">
+  <h1>{{site.title}}</h1>
+  <p class="muted">{{site.description}}</p>
+</section>
+
+<leaf:posts limit="10" />

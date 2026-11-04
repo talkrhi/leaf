@@ -1,0 +1,9 @@
+<leaf:page title="About" nav="About" order="10" />
+
+<h1>About</h1>
+
+<leaf:mfm>
+  This blog runs on **Leaf**, a tiny blog server.
+
+  Every page is a .leaf file you can edit from the admin panel, and posts are written in MFM, so text can $[tada dance], $[jelly wobble], turn $[fg.color=e8590c orange], go $[rainbow rainbow] or get $[x2 big].
+</leaf:mfm>

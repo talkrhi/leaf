@@ -1,0 +1,17 @@
+<leaf:page title="Log in" />
+
+<h1>Log in</h1>
+
+<form class="leaf-form" data-leaf-form="/api/auth/login" data-redirect="/">
+  <label>Username <input name="username" autocomplete="username" required></label>
+  <label>Password <input name="password" type="password" autocomplete="current-password" required></label>
+  <p class="form-error" data-error></p>
+  <button>Log in</button>
+</form>
+
+<leaf:if test="guests">
+  <p class="muted">Just visiting? <button class="link" data-leaf-action="guest">Continue as a guest</button></p>
+</leaf:if>
+<leaf:if test="registration">
+  <p class="muted">New here? <a href="/register">Create an account</a></p>
+</leaf:if>

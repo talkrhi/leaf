@@ -1,0 +1,22 @@
+<leaf:page title="Post" />
+
+<leaf:post />
+
+<leaf:if test="comments">
+  <section class="comments">
+    <h2>Comments</h2>
+    <leaf:comments />
+
+    <leaf:if test="signed-in">
+      <form class="comment-form" data-leaf-form="/api/posts/{{post.id}}/comments">
+        <textarea name="body" rows="3" maxlength="2000" required placeholder="Add a comment..." aria-label="Comment"></textarea>
+        <div class="comment-form-footer">
+          <p class="form-error" data-error></p>
+          <button>Comment</button>
+        </div>
+      </form>
+    <leaf:else />
+      <p class="muted"><a href="/login?returnUrl=/post/{{post.slug}}">Log in</a> to leave a comment.</p>
+    </leaf:if>
+  </section>
+</leaf:if>

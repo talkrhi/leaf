@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="container">
+    <a class="site-title" href="/">{{site.title}}</a>
+    <leaf:nav />
+    <div class="account">
+      <leaf:if test="signed-in">
+        <span class="muted">{{user.name}}</span>
+        <leaf:if test="admin"><a href="/admin">Admin</a></leaf:if>
+        <button class="link" data-leaf-action="logout">Log out</button>
+      <leaf:else />
+        <a href="/login">Log in</a>
+      </leaf:if>
+    </div>
+  </div>
+</header>

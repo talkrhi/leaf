@@ -1,0 +1,12 @@
+<leaf:page title="Welcome" />
+
+<h1>Welcome to Leaf</h1>
+<p class="muted">Name your blog and create your admin account. That's it.</p>
+
+<form class="leaf-form" data-leaf-form="/api/auth/setup" data-redirect="/admin">
+  <label>Blog title <input name="siteTitle" value="My Leaf Blog" required></label>
+  <label>Admin username <input name="username" autocomplete="username" required></label>
+  <label>Password <input name="password" type="password" autocomplete="new-password" minlength="8" required></label>
+  <p class="form-error" data-error></p>
+  <button>Create my blog</button>
+</form>

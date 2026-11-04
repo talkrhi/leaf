@@ -1,0 +1,5 @@
+<footer class="site-footer">
+  <div class="container muted">
+    © {{year}} {{site.title}} | <a href="https://gitlab.com/talkrhi/leaf">powered by Leaf</a>
+  </div>
+</footer>

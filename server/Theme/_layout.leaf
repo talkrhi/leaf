@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{page.title}} | {{site.title}}</title>
+  <meta name="description" content="{{site.description}}">
+  <link rel="stylesheet" href="/css/leaf.css">
+  <link rel="stylesheet" href="/css/mfm.css">
+  <script type="module" src="/js/main.js"></script>
+</head>
+<body>
+  <leaf:include src="_header" />
+  <main class="container">
+    <leaf:slot />
+  </main>
+  <leaf:include src="_footer" />
+</body>
+</html>

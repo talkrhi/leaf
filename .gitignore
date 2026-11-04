@@ -1,0 +1,10 @@
+server/bin/
+server/obj/
+
+server/site/
+
+server/wwwroot/js/
+
+client/node_modules/
+
+.DS_Store
